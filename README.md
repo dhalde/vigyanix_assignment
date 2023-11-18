@@ -38,5 +38,9 @@ Create a single-page application with a Node.js backend and a frontend using Ang
 - **Duplicate Task Numbers:**
   - If a user tries to create a task with an existing task number, an error is thrown to prevent duplicates.
 
+## API Documentation
+
+Explore our API using [Postman](https://documenter.getpostman.com/view/20807936/2s9Ye8eubW).
+
 
 
