@@ -1,0 +1,45 @@
+<h2 class="text-center">Update Task Details</h2>
+<br>
+<form class="text-center" *ngIf="task != []">
+    <label for="task_number">Task Number : </label>
+    <br>
+    <input type="text" name="task_number" [value]="task[0]['task_id'].task_number" disabled>
+    <br><br>
+    <label for="notes">Notes : </label>
+    <br>
+    <input type="text" name="notes" [(ngModel)]="task[0]['task_id'].notes">
+    <br><br>
+    <label for="actual_hours">Actual Hours : </label>
+    <br>
+    <input type="text" name="actual_hours" [(ngModel)]="task[0]['task_id'].actual_hours">
+    <br>
+    <br>
+
+    <table class="table table-striped text-center table-success table-hover">
+        <thead>
+            <tr>
+                <th>Estimated Hours</th>
+                <th>Estimated Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of task" style="cursor:pointer;">
+                <td>{{i.new_estimate_hours}}</td>
+                <td>{{i.new_estimated_notes}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <label for="estimate_hours">Estimate Hours : </label>
+    <br>
+    <input type="text" name="estimate_hours" [(ngModel)]="estimate_hours">
+    <br><br>
+    <label for="estimate_notes">Estimate Notes : </label>
+    <br>
+    <input type="text" name="estimate_notes" [(ngModel)]="estimate_notes">
+    <br><br>
+
+    <button class="btn btn-success" (click)="update()">Update</button>
+    <button class="btn btn-danger" (click)="goback()">Back</button>
+
+</form>

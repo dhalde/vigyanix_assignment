@@ -1,0 +1,9 @@
+{
+   "/api/": {
+     "secure": false,
+     "changeOrigin": true,
+     "logLevel": "debug",
+     "pathRewrite": {"^/api/" : ""},
+     "target":"https://206c-103-147-175-99.ngrok-free.app/"
+   }
+ }

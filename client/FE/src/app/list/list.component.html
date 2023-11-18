@@ -1,0 +1,20 @@
+<h2 class="m-1 text-center mb-2">Vigyanix - Task List</h2>
+
+<table class="table table-striped text-center table-success table-hover">
+    <thead>
+        <tr>
+            <th>Task Number</th>
+            <th>Notes</th>
+            <th>Actual Hours</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of list" routerLink="/detail/{{i._id}}" style="cursor:pointer;">
+            <td>{{i.task_number}}</td>
+            <td>{{i.notes}}</td>
+            <td>{{i.actual_hours}}</td>
+        </tr>
+    </tbody>
+
+
+</table>

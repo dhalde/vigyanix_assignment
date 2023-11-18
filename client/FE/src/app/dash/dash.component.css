@@ -1,0 +1,14 @@
+.bl{
+    
+    color: white;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.block{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}

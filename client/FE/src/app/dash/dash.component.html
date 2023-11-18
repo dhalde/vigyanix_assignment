@@ -1,0 +1,27 @@
+<form class="text-center" style="font-size:larger;"
+#basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <label for="power">Task Number : </label>
+    <br>
+    <input type="text" ngModel name="task_number">
+    <br><br>
+    <label for="notes">Notes : </label>
+    <br>
+    <input type="text" ngModel name="notes">
+    <br><br>
+    <label for="estimate_hours">Estimate Hours : </label>
+    <br>
+    <input type="text" ngModel name="estimate_hours">
+    <br><br>
+    <label for="estimate_notes">Estimate Notes : </label>
+    <br>
+    <input type="text" ngModel name="estimate_notes">
+    <br><br>
+    <label for="actual_hours">Actual Hours: </label>
+    <br>
+    <input type="text" ngModel name="actual_hours">
+    <br><br>
+    <button class="btn btn-success">Submit</button>
+</form>
+
+<br>
+<br>
